@@ -1,58 +1,62 @@
-🚀 AI Workflow Pack for Project Management Productivity
-📌 Project Overview
-This repository contains an executive-level AI Workflow Pack designed to transform unstructured project notes, scattered team updates, and complex inbox communications into actionable executive summaries, structured decision-tracking tables, and risk mitigation plans.
+# 🚀 AI Workflow Pack for Project Management Productivity
 
-The project demonstrates end-to-end prompt engineering frameworks (such as C.A.R.E. and the Verification Pass) tailored for civil and software project management environments, ensuring high-density, skimmable, and hallucination-free outputs.
+[![SDAIA Academy](https://img.shields.io/badge/SDAIA%20Academy-Generative%20AI%20Program-emerald)](https://github.com/SDAIAAcademy)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-🛠️ Included Workflows & Prompt Templates
-1. Stakeholder Delay Notice (تحديثات التأخير لأصحاب المصلحة)
-Task Type: Summarize + Plan
+## 📌 Project Overview
+This repository contains an executive-level **AI Workflow Pack** designed to transform unstructured project notes, scattered team updates, and complex inbox communications into actionable executive summaries, structured decision-tracking tables, and risk mitigation plans.
 
-Purpose: Generates structured issue-escalation emails, separating confirmed facts from unconfirmed assumptions.
+The project demonstrates end-to-end prompt engineering frameworks (such as **C.A.R.E.** and the **Verification Pass**) tailored for civil and software project management environments, ensuring high-density, skimmable, and hallucination-free outputs.
 
-Prompt:
+---
 
-Plaintext
-Context: بصفتي مهندس إدارة مشروع، أواجه تأخيراً لمدة [المدة] من مورد رئيسي في [اسم المشروع].
-Action: اكتب رسالة لـ [الفريق الداخلي / المدير المباشر].
-Role: [مشجع وعملي / رسمي ومباشر].
-Expected Output: توضيح السبب، الأثر على العمل، والخطوات/البدائل المطلوبة.
-2. Text-to-Table Converter (تحويل النوتات إلى جدول)
+## 🛠️ Included Workflows & Prompt Templates
+
+### 1. Stakeholder Delay Notice
+- **Task Type:** Summarize + Plan
+- **Purpose:** Generates structured issue-escalation emails, separating confirmed facts from unconfirmed assumptions.
+- **Prompt:**
+```text
+Context: As a Project Management Engineer, I am facing a delay of [Duration] from a key supplier on [Project Name].
+Action: Draft an update email to [Internal Team / Direct Manager].
+Role: [Encouraging & Practical / Formal & Direct].
+Expected Output: Clarify the cause, operational impact, and required next steps/alternatives.
+
+2. Text-to-Table Converter
 Task Type: Extract + Summarize
 
 Purpose: Transforms raw meeting notes into a standard 5-column Markdown decision-tracking matrix.
 
 Prompt:
+Context: I manage operational project updates and have a set of scattered daily meeting notes.
+Action: Analyze the provided text, extract key data, and output a structured, high-precision Markdown table.
+Role: Professional Project Manager focused on data organization and rapid triage.
+Expected Output: A strict 5-column table containing: (Workstream/Item, Status, Owner/Stakeholder, Key Issue / Action Needed, Next Milestone).
 
-Plaintext
-Context: أعمل على إدارة وتتبع المستجدات التشغيلية للمشروع، ولدي مجموعة من الملاحظات اليومية المبعثرة.
-Action: قم بتحليل النص المرفق واستخراج البيانات منه وإعادتها مصاغة في جدول Markdown منظم وعالي الدقة.
-Role: بصفتك مدير مشروع محترف يركز على تنظيم البيانات وسرعة الفرز.
-Expected Output: جدول من 5 أعمدة حصراً: (المسار/بند العمل، الحالة، الجهة/المسؤول، المشكلة/الإجراء المطلوب، الموعد القادم).
-3. Executive Brief & Decision Tracker (الملخص التنفيذي وتتبع القرارات)
+3. Executive Brief & Decision Tracker
 Task Type: Summarize + Extract
 
 Purpose: Synthesizes complex operational notes into executive-ready bullet points paired with action item tables.
 
 Prompt:
 
-Plaintext
-Context: لدينا مخرجات وملاحظات مبعثرة من اجتماع إطلاق المنتج التجريبي.
-Action: قم بتحليل النص، واستخراج القرارات المؤكدة، والمهام المعلقة، والقرارات المطلوبة للبت فيها قبل الاجتماع القادم.
-Role: بصفتك مدير مشروع مهني يركز على إدارة المخاطر وتسهيل اتخاذ القرارات.
-Expected Output: تقديم ملخص مقسم إلى نقاط رئيسية سريعة القراءة يليه جدول تتبع الخمسة أعمدة.
-4. Overloaded Inbox Triaging (إدارة الأزمات والرسائل المتراكمة)
+Context: We have scattered outputs and notes from the beta product launch meeting.
+Action: Analyze the text, extract confirmed decisions, pending tasks, and unresolved decisions needed before the next meeting.
+Role: Professional Project Manager focused on risk management and decision facilitation.
+Expected Output: An executive summary split into quick-read bullet points followed by the standard 5-column tracking table.
+
+4. Overloaded Inbox Triaging
 Task Type: Analyze + Plan
 
 Purpose: Evaluates high-pressure launch scenarios (TaskFlow case study) to extract minimum acceptable scopes (MVP) and assign team ownership.
 
 Prompt:
 
-Plaintext
-Context: عودة من غياب مع وجود [عدد] رسالة وموعد حرج للإطلاق خلال [عدد] أيام.
-Action: حلل الوضع وقدم حسم للقرارات الأربعة الرئيسية وتوزيع المهام على الفرق.
-Role: Senior Product Manager خبير في إدارة الأزمات.
-Expected Output: ملخص للقرارات الأربعة + جدول توزيع المهام الخماسي.
+Context: Returning from 2 days OOO with 30 unread messages and a critical launch deadline in 5 days.
+Action: Analyze the situation, resolve the 4 key launch decisions, and distribute action items across teams.
+Role: Senior Product Manager expert in crisis management.
+Expected Output: A 4-decision resolution summary + a 5-column team allocation table.
+
 ⚙️ Technical Documentation & Verification Pass Protocol
 Core Methodology
 C.A.R.E. Framework: Directs AI interactions via explicit Context, Action, Role, and Expected Output specifications.
